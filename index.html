@@ -15,7 +15,10 @@
 <body class="bg-cream flex flex-col min-h-screen justify-center items-center">
   <div class="flex flex-col mx-4 md:w-5/12 md:flex-row ">
     <div class="mt-6 md:w-1/2 md:mt-0">
-      <img src="./images/image-product-mobile.jpg" alt="perfume" class="w-full h-full object-cover rounded-t-lg">
+      <picture>
+          <source srcset="./images/image-product-desktop.jpg" media="(min-width: 576px)" />
+          <img src="./images/image-product-mobile.jpg" alt="perfume bottle" class="w-full h-full object-cover rounded-t-lg" />
+      </picture>
     </div><!-- /.rounded-t-lg -->
     <div class="bg-white p-4 space-y-2 md:w-1/2 md:px-8 md:pb-8">
       <p class="font-montserrat text-xs mt-2 tracking-[.40em] uppercase md:mb-6">Perfume</p>
@@ -31,9 +34,9 @@
       </button>
     </div><!-- /.bg-white -->
   </div>
-  <div class="attribution mt-6">
+  <footer class="attribution mt-6">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by Amadou.
+  </footer>
 </body>
 </html>
